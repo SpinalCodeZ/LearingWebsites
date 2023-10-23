@@ -1,0 +1,109 @@
+:root {
+    --green: #00FF00;
+    --white: #FFFFFF;
+    --black: #000000;
+    --blue: #0729f5;
+    --yellow: #fafa10;
+    --red: #ff0202;
+    --ice: #4cf5ff;
+    --orange: #ff7602;
+  }
+  
+  body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: Courier;
+  }
+  
+  li {
+    list-style: circle;
+  }
+  
+  .list {
+    list-style: square;
+  }
+  
+  .light-theme {
+    --bg: var(--yellow);
+    --fontColor: var(--red);
+    --btnBg: var(--black);
+    --btnFontColor: var(--blue);
+  }
+  
+  .dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--blue);
+    --btnBg: var(--yellow);
+    --btnFontColor: var(--orange);
+  }
+  
+  .btn {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+  }
+  
+  .flashlight {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom: 145px;
+  }
+  
+  .upper {
+    background-color: var(--blue);
+    height: 50px;
+    width: 180px;
+  }
+  
+  .lower {
+    height: 0px;
+    width: 120px;
+    border-top: 30px solid #595959;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+  }
+  
+  .shaft {
+    height: 300px;
+    width: 120px;
+    background-color: var(--blue);
+    position: relative;
+    left: 30px;
+    border-radius: 0px 0px 20px 20px;
+  }
+  
+  .button {
+    height: 40px;
+    width: 40px;
+    background-color: var(--ice);
+    position: relative;
+    top: 40px;
+    left: 40px;
+    border-radius: 8px;
+    outline-color: var(--black);
+    border: none;
+    box-shadow: 0px 5px var(--black);
+  }
+  
+  .light {
+    height: 0px;
+    width: 160px;
+    border-top: 300px solid var(--white);
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    position: relative;
+    bottom: 680px;
+    right: 60px;
+    visibility: hidden;
+  }
+  
